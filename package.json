@@ -1,0 +1,17 @@
+{
+  "author": {
+    "name": "Justin Leemans"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.1"
+  },
+  "description": "Class serialization and data store interface for Unity",
+  "displayName": "Data Store",
+  "keywords": [
+    "data-store",
+	"data",
+	"store"
+  ],
+  "name": "com.jeelee97.data-store",
+  "version": "1.0.0"
+}
