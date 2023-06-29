@@ -18,7 +18,7 @@ Currently the best way to include this package in your project is through the un
 You can use the included local data store straight out of the box. Just create an instance with a type that you want to serialize and you are done.
 
 ```c#
-IDataStore dataStore = new LocalDataStore<YourDataClass>();
+IDataStore<YourDataClass> dataStore = new LocalDataStore<YourDataClass>();
 ```
 
 On this instance you can now call the available methods to handle your data or interact with the `Data` property itself. Note that `Load()` is not necessary to call when no value is supplied or set to true when creating your instance of `LocalDataStore` because it will be automatically loaded on initialization. You can of course call this method to override the data object with data that has been stored earlier.
