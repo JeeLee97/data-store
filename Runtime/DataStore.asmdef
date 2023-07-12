@@ -1,6 +1,6 @@
 {
     "name": "DataStore",
-    "rootNamespace": "JeeLee.DataStore",
+    "rootNamespace": "DataStore",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
