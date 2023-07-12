@@ -13,7 +13,7 @@ namespace DataStore.Stores
         {
         }
 
-        protected override void OnSave(Action<bool> callback)
+        protected override void OnSave(out bool success)
         {
             FileStream fileStream = null;
 
@@ -26,8 +26,8 @@ namespace DataStore.Stores
             }
             catch (Exception e)
             {
+                success = false;
                 Debug.LogError($"(LocalPersistentData) error saving data for {typeof(T)}, {e.Message}");
-                callback?.Invoke(false);
                 return;
             }
             finally
@@ -35,15 +35,15 @@ namespace DataStore.Stores
                 fileStream?.Close();
             }
 
-            callback?.Invoke(true);
+            success = true;
         }
 
-        protected override void OnLoad(Action<bool> callback)
+        protected override void OnLoad(out bool success)
         {
             string path = GetFullPath();
             if (!File.Exists(path))
             {
-                callback?.Invoke(false);
+                success = false;
                 return;
             }
 
@@ -55,15 +55,15 @@ namespace DataStore.Stores
             }
             catch (Exception e)
             {
+                success = false;
                 Debug.LogError($"(LocalPersistentData) error loading data for {typeof(T)}, {e.Message}");
-                callback?.Invoke(false);
                 return;
             }
 
-            callback?.Invoke(true);
+            success = true;
         }
 
-        protected override void OnDelete(Action<bool> callback)
+        protected override void OnDelete(out bool success)
         {
             try
             {
@@ -75,12 +75,12 @@ namespace DataStore.Stores
             }
             catch (Exception e)
             {
+                success = false;
                 Debug.LogError($"(LocalPersistentData) error deleting data for {typeof(T)}, {e.Message}");
-                callback?.Invoke(false);
                 return;
             }
 
-            callback?.Invoke(true);
+            success = true;
         }
 
         private string GetFullPath()

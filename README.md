@@ -57,19 +57,22 @@ public class ExampleDataStore<T> : DataStore<T>
 
 ## Required data handling methods
 
-Next we override the abstract methods which define the actions the data store should take. All of these methods come with a callback. Implementing this callback is not required and will result in the corresponding interface method always returning true when called. Implementing this callback is escpecially usefull if you want to give feedback about if the handling of the data was successfull. You can do this by calling for example `callback?.Invoke(true);`.
+Next we override the abstract methods which define the actions the data store should take. These methods have a boolean as parameter called `success` which needs to be set. The value of this is used to communicate back if the process was successfull. For example if you want to show a prompt when saving data has failed.
 
 ```c#
-protected override void OnSave(Action<bool> callback)
+protected override void OnSave(out bool success)
 {
+	success = true;
 }
 
-protected override void OnLoad(Action<bool> callback)
+protected override void OnLoad(out bool success)
 {
+	success = true;
 }
 
-protected override void OnDelete(Action<bool> callback)
+protected override void OnDelete(out bool success)
 {
+	success = true;
 }
 ```
 
