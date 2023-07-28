@@ -1,4 +1,4 @@
-namespace DataStore
+namespace JeeLee.DataStore
 {
     public interface IDataStore<out T>
         where T : class, new()

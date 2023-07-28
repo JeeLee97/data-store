@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DataStore
+﻿namespace JeeLee.DataStore
 {
     public abstract class DataStore<T> : IDataStore<T>
         where T : class, new()

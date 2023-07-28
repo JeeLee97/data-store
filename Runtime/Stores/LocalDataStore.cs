@@ -4,7 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace DataStore.Stores
+namespace JeeLee.DataStore.Stores
 {
     public sealed class LocalDataStore<T> : DataStore<T>
         where T : class, new()
