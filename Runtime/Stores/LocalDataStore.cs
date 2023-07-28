@@ -27,7 +27,7 @@ namespace JeeLee.DataStore.Stores
             catch (Exception e)
             {
                 success = false;
-                Debug.LogError($"(LocalPersistentData) error saving data for {typeof(T)}, {e.Message}");
+                Debug.LogError($"DataStore error saving data for {typeof(T)}, {e.Message}");
                 return;
             }
             finally
@@ -56,7 +56,7 @@ namespace JeeLee.DataStore.Stores
             catch (Exception e)
             {
                 success = false;
-                Debug.LogError($"(LocalPersistentData) error loading data for {typeof(T)}, {e.Message}");
+                Debug.LogError($"DataStore error loading data for {typeof(T)}, {e.Message}");
                 return;
             }
 
@@ -76,7 +76,7 @@ namespace JeeLee.DataStore.Stores
             catch (Exception e)
             {
                 success = false;
-                Debug.LogError($"(LocalPersistentData) error deleting data for {typeof(T)}, {e.Message}");
+                Debug.LogError($"DataStore error deleting data for {typeof(T)}, {e.Message}");
                 return;
             }
 
