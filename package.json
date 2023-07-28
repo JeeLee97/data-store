@@ -9,9 +9,9 @@
   "displayName": "Data Store",
   "keywords": [
     "data-store",
-	"data",
-	"store"
+    "data",
+    "store"
   ],
   "name": "com.justinleemans.data-store",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
