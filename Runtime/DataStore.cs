@@ -4,7 +4,7 @@
         where T : class, new()
     {
         /// <summary>
-        /// The data set used in by store.
+        /// The data set used by the store.
         /// </summary>
         public T Data { get; protected set; }
 
