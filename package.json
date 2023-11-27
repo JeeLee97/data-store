@@ -1,6 +1,6 @@
 {
   "name": "com.justinleemans.data-store",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "displayName": "Data Store",
   "description": "Class serialization and data store interface for Unity",
   "author": {
