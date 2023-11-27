@@ -1,17 +1,24 @@
 {
+  "name": "com.justinleemans.data-store",
+  "version": "1.0.1",
+  "displayName": "Data Store",
+  "description": "Class serialization and data store interface for Unity",
   "author": {
     "name": "Justin Leemans"
   },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.0.1"
   },
-  "description": "Class serialization and data store interface for Unity",
-  "displayName": "Data Store",
   "keywords": [
     "data-store",
     "data",
     "store"
   ],
-  "name": "com.justinleemans.data-store",
-  "version": "1.0.1"
+  "samples": [
+    {
+      "displayName": "Example Stores",
+      "description": "A collection of data stores ready to use",
+      "path": "Samples~/ExampleStores"
+    }
+  ]
 }
