@@ -1,4 +1,4 @@
-﻿namespace JeeLee.DataStore
+﻿namespace JeeLee.UniDataStore
 {
     public abstract class DataStore<T> : IDataStore<T>
         where T : class, new()

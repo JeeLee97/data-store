@@ -11,7 +11,7 @@ DataStore is a lightweight class serialization interface to allow for easy unifi
 
 # Installation
 
-Currently the best way to include this package in your project is through the unity package manager. Add the package using the git URL of this repo: https://github.com/justinleemans/data-store.git
+Currently the best way to include this package in your project is through the unity package manager. Add the package using the git URL of this repo: https://github.com/justinleemans/uni-data-store.git
 
 # Quick Start
 
