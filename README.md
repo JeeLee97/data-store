@@ -1,6 +1,6 @@
-# DataStore - Class serialization and data store interface for Unity
+# UniDataStore - Class serialization and data store interface for Unity
 
-DataStore is a lightweight class serialization interface to allow for easy unified interaction with classes that you want serialized in Unity. Includes useable example of local data store implementation. The system is easily extendable to be used with all kinds of other methods of storing data. The system is also flexible enough to be used in all kinds of frameworks including dependency injection frameworks.
+UniDataStore is a lightweight class serialization interface to allow for easy unified interaction with classes that you want serialized in Unity. Includes useable example of local data store implementation. The system is easily extendable to be used with all kinds of other methods of storing data. The system is also flexible enough to be used in all kinds of frameworks including dependency injection frameworks.
 
 # Table of Contents
 
